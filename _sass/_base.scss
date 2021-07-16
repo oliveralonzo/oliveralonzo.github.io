@@ -8,6 +8,10 @@ p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
   color: var(--global-text-color);
 }
 
+article div {
+  margin-bottom: 1rem;
+}
+
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
@@ -17,14 +21,6 @@ a, table.table a {
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
   }
-}
-
-blockquote {
-  background: var(--global-bg-color);
-  border-left: 2px solid var(--global-theme-color);
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  font-size: 1.2rem;
 }
 
 // Math
@@ -48,16 +44,18 @@ blockquote {
   color: var(--global-theme-color);
 }
 
+
 // Profile
 
 .profile {
-  margin-left: 1rem;
+  margin-right: 2rem;
   width: 100%;
 
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    font-size: 1.2rem;
     p {
       display: inline-block;
       margin: 0;
@@ -71,6 +69,10 @@ blockquote {
     .address {
       p { display: block; }
     }
+    img {
+      width: 100%;
+    }
+
   }
 }
 
@@ -148,6 +150,7 @@ blockquote {
           color: var(--global-theme-color);
         }
       }
+      margin: 0 0.25rem;
     }
   }
 }
@@ -197,6 +200,7 @@ blockquote {
 
 .news table th {
   color: var(--global-text-color);
+  white-space: nowrap;
 }
 
 // Social (bottom)
@@ -204,7 +208,7 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -215,6 +219,7 @@ blockquote {
           color: var(--global-theme-color);
         }
       }
+      margin: 0 0.5rem;
     }
   }
   .contact-note {
