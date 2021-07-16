@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: These are the projects I have made contributions to, either by leading the entire project or contributing to specific studies. To learn more, click on a project!
 nav: true
 display_categories: [work, fun]
 horizontal: false
