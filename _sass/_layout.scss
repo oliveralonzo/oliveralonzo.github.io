@@ -22,10 +22,30 @@
   max-width: $max-content-width;
 }
 
+// Bio
+
+.bio {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+
+    .about {
+      width: 60%;
+    }
+  }
+}
+
 // Profile
 .profile {
   img {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto 3rem auto;
+    display: block;
+    // -webkit-box-shadow: none !important;
+    // -moz-box-shadow: none !important;
+    // box-shadow: none !important;
   }
 }
 
@@ -37,6 +57,12 @@
  ******************************************************************************/
 
 // TODO: redefine publications layout.
+
+abbr {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
 
 
 /*****************************************************************************
