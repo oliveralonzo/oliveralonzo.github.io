@@ -16,7 +16,7 @@ footer_text: >
 icon: 🔥 # the emoji used as the favicon
 url: https://oliveralonzo.com # the base hostname & protocol for your site
 baseurl: / # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -56,7 +56,7 @@ blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
-cv_url: /assets/Oliver Alonzo CV.pdf
+cv_url: /cv
 
 contact_note: >
 
@@ -136,6 +136,7 @@ plugins:
   - jekyll-twitter-plugin
   - jekyll-sitemap
   - jemoji
+  - jekyll-redirect-from
 
 # Extras
 github: [metadata]
