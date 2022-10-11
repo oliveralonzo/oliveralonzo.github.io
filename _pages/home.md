@@ -15,7 +15,7 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-I am a PhD student in the Computing and Information Sciences program at **Rochester Institute of Technology**, where I am advised by [Matt Huenerfauth](https://huenerfauth.ist.rit.edu){:target="_blank"}. I am also an Assistant Professor at **Creighton University**, where I am teaching undergraduate computer science courses.
+I am an **Assistant Professor** at **Creighton University**, where I'm a post-doctoral faculty member in their Department of Computer Science, Design and Journalism. I am also a **PhD student** in the Computing and Information Sciences program at **Rochester Institute of Technology**, where I am advised by [Matt Huenerfauth](https://huenerfauth.ist.rit.edu){:target="_blank"}. 
 
 My previous experiences include an internship at **Facebook** as a UX Researcher during the summer of 2020, and an internship at **Adobe Research** as an HCI Research Intern during the summer of 2021.
 
