@@ -7,9 +7,9 @@ importance: 2
 category: work
 ---
 
-<b> Oliver Alonzo, </b> Rochester Institute of Technology  <br>
-<b>  <a href="https://hishin.github.io" target="_blank"> Hijung Valentina Shin </a>, </b> Adobe Research <br>
-<b> <a href="https://dingzeyu.li" target="_blank">Dingzeyu Li</a>, </b> Adobe Research <br>
+**Oliver Alonzo,** Rochester Institute of Technology  
+[Hijung Valentina Shin](https://hishin.github.io){:target="_blank"}, Adobe Research  
+[Dingzeyu Li](https://dingzeyu.li){:target="_blank"}, Adobe Research
 
 <div class="links">
   <a href="/assets/pdf/beyond-subtitles.pdf" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Paper (Pre-Print) </a>
@@ -17,7 +17,7 @@ category: work
 </div>
 
 
-<h2> abstract </h2>
+## abstract
 Captioning provides access to sounds in audio-visual content for people who are Deaf or Hard-of-hearing (DHH).
 As user-generated content in online videos grows in prevalence, researchers have explored using automatic speech recognition (ASR) to automate captioning.
 However, definitions of captions (as compared to subtitles) include non-speech sounds, which ASR typically does not capture as it focuses on speech.
@@ -26,7 +26,7 @@ Formative interviews with 11 DHH participants informed the design and implementa
 Our findings include identifying DHH viewers' interests in having <i>important</i> non-speech sounds included in captions, as well as various criteria for sound selection and the appropriateness of text-based versus graphic captions of non-speech sounds.
 Our findings also include hearing creators' requirements for automatic tools to assist them in captioning non-speech sounds.
 
-<h2> prototype </h2>
+## prototype
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -38,11 +38,12 @@ Our findings also include hearing creators' requirements for automatic tools to 
 </div>
 
 <div class="links caption">
-  <a href="https://oliveralonzo.com/beyond-subtitles/" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Try it! </a>
+  <a href="https://github.com/oliveralonzo/beyond-subtitles" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> GitHub </a>
   <a href="https://youtu.be/OBRjjqG1Ht8" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Video Demo </a>
+  <a href="https://oliveralonzo.com/beyond-subtitles/" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Try it! </a>
 </div>
 
-<h2> citation </h2>
+## citation
 ```
    @inproceedings{Alonzo-ASSETS-2022,
     author = {Alonzo, Oliver and Shin, Hijung Valentina and Li, Dingzeyu},
