@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-08-12 13:00:00-0400
+date: 2022-06-16 13:00:00-0400
 inline: true
 ---
 
-I started teaching at Creighton University! I'm excited for this opportunity to get teaching experience as I complete my dissertation research.
+The paper describing our work during my internship with Adobe Research was accepted to be at ASSETS'22 ✌🏼 
