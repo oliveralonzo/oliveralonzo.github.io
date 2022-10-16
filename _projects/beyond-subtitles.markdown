@@ -17,7 +17,7 @@ category: work
 </div>
 
 
-## abstract
+## Abstract
 Captioning provides access to sounds in audio-visual content for people who are Deaf or Hard-of-hearing (DHH).
 As user-generated content in online videos grows in prevalence, researchers have explored using automatic speech recognition (ASR) to automate captioning.
 However, definitions of captions (as compared to subtitles) include non-speech sounds, which ASR typically does not capture as it focuses on speech.
@@ -26,7 +26,7 @@ Formative interviews with 11 DHH participants informed the design and implementa
 Our findings include identifying DHH viewers' interests in having <i>important</i> non-speech sounds included in captions, as well as various criteria for sound selection and the appropriateness of text-based versus graphic captions of non-speech sounds.
 Our findings also include hearing creators' requirements for automatic tools to assist them in captioning non-speech sounds.
 
-## prototype
+## Prototype
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -43,7 +43,7 @@ Our findings also include hearing creators' requirements for automatic tools to 
   <a href="https://oliveralonzo.com/beyond-subtitles/" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Try it! </a>
 </div>
 
-## citation
+## Citation
 ```
    @inproceedings{Alonzo-ASSETS-2022,
     author = {Alonzo, Oliver and Shin, Hijung Valentina and Li, Dingzeyu},

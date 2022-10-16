@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: These are the projects I have made contributions to, either by leading the entire project or contributing to specific studies. To learn more, click on a project!
 nav: true
