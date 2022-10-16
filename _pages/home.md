@@ -11,7 +11,7 @@ profile:
 details: true # includes more details about me
 selected_papers: true # includes a list of papers marked as "selected={true}"
 news: true  # includes a list of news items
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 
 ---
 
