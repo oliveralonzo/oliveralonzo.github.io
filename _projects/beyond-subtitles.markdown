@@ -12,8 +12,9 @@ category: work
 [Dingzeyu Li](https://dingzeyu.li){:target="_blank"}, Adobe Research
 
 <div class="links">
-  <a href="/assets/pdf/beyond-subtitles.pdf" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Paper (Pre-Print) </a>
-  <a href="https://youtu.be/kAGTTLW--6g" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Presentation </a>
+  <a href="https://dl.acm.org/doi/10.1145/3517428.3544808" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> See on ACM </a>
+  <a href="/assets/pdf/beyond-subtitles-slides.pdf" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Slides (PDF) </a>  
+  <a href="https://youtu.be/kAGTTLW--6g" class="btn btn-sm z-depth-0 waves-effect waves-light" role="button" target="_blank"> Video Presentation </a>
 </div>
 
 
