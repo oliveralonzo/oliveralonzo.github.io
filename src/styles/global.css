@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 2.5rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+p strong, h1 strong {
+    font-weight: 600;
+}
+
+a {
+    color: blue;
+}

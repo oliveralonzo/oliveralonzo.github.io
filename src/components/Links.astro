@@ -1,0 +1,16 @@
+---
+const { links } = Astro.props;
+---
+
+<div class="mt-5">
+    <ul class="flex">
+        {
+            Object.values(links).map((link, i, arr) => (
+                <li>
+                    <a href={link.url}> {link.showas} </a> 
+                    {i !== arr.length -1 && <span class="p-1"> | </span>}
+                </li>
+            ))
+        }
+    </ul>
+</div>
