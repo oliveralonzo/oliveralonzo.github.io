@@ -1,0 +1,41 @@
+---
+const { publication } = Astro.props;
+import { siteInfo } from "../siteInfo";
+import Links from "./Links.astro";
+
+const links = publication.data.links;
+
+var formattedAuthors = publication.data.authors.split(",");
+formattedAuthors.forEach((author, i) => {
+    if (author.trim() === `${siteInfo.firstName} ${siteInfo.lastName}`) {
+        formattedAuthors[i] =
+            `<span class="underline"> ${siteInfo.firstName} ${siteInfo.lastName}</span>`;
+    }
+});
+formattedAuthors = formattedAuthors.join(", ");
+---
+
+<li class="mb-10">
+    <div class="mb-3">
+        <span
+            class="bg-blue-500 font-medium text-sm text-white py-2 px-4 rounded-full"
+        >
+            {publication.data.conference}
+            {publication.data.year}
+        </span>
+
+        {
+            publication.data.award && (
+                <span class="pl-3">{publication.data.award}</span>
+            )
+        }
+    </div>
+    <div class="pl-1">
+        <div class="font-semibold mb-1">{publication.data.title}</div>
+        <div class="mb-1" set:html={formattedAuthors}></div>
+
+        <div>
+            {links && <Links links={links} />}
+        </div>
+    </div>
+</li>

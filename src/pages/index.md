@@ -1,9 +1,8 @@
 ---
 layout: ../layouts/Home.astro
-firstName: 'Oliver'
-lastName: 'Alonzo'
-description: 'Assistant Professor at DePaul University'
 image: '/images/oliver.png'
+news: 4
+publications: 3
 links:
     email:
         url: mailto:oliver.alonzo@depaul.edu

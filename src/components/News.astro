@@ -1,0 +1,18 @@
+---
+import { getCollection, render } from "astro:content";
+import NewsItem from "./NewsItem.astro";
+
+const { number } = Astro.props;
+
+var allNews = await getCollection("news");
+allNews.sort((a, b) => b.data.date - a.data.date);
+
+if (number) {
+    allNews = allNews.slice(0, number);
+}
+
+---
+
+<h2>Recent News</h2>
+
+{allNews.map((item) => <NewsItem item={item} />)}

@@ -1,14 +1,19 @@
 ---
+import Separator from "./Separator.astro";
 const { links } = Astro.props;
+
 ---
 
-<div class="mt-5">
+<div>
     <ul class="flex">
         {
             Object.values(links).map((link, i, arr) => (
                 <li>
-                    <a href={link.url} target="_blank"> {link.showas} </a> 
-                    {i !== arr.length -1 && <span class="p-1"> | </span>}
+                    <a href={link.url} target="_blank">
+                        {" "}
+                        {link.showas}{" "}
+                    </a>
+                    {i !== arr.length - 1 && <Separator />}
                 </li>
             ))
         }

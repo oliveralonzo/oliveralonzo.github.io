@@ -1,0 +1,22 @@
+---
+const { item } = Astro.props;
+
+import { render } from "astro:content";
+
+const { Content } = await render(item);
+---
+
+<div class="flex-row">
+    <div class="w-40 pr-5 font-bold">
+        {
+            item.data.date.toLocaleString("en-US", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+            })  
+        }
+    </div>
+    <div>
+        <Content />
+    </div>
+</div>

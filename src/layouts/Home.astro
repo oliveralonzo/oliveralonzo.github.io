@@ -1,7 +1,9 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import { Image } from "astro:assets";
 import Links from "../components/Links.astro";
+import News from "../components/News.astro";
+import Publications from "../components/Publications.astro";
+import { siteInfo } from "../siteInfo";
 
 const { frontmatter } = Astro.props;
 
@@ -9,23 +11,27 @@ import { Content as Details } from "../components/details.md";
 ---
 
 <BaseLayout>
-    <div class="p-5 md:p-0 flex justify-center font-extralight mt-22">
-        <div class="flex-row md:max-w-2xl">
-            <div class="flex-row justify-center md:flex md:justify-around">
-                <div class="w-1/2 mb-5 justify-self-center md:w-3/8 md:pr-10">
-                    <img src={frontmatter.image} alt="mandatory" />
-                </div>
-                <div class="md:w-3/5">
-                    <h1>
-                        <strong>{frontmatter.firstName}</strong>
-                        {frontmatter.lastName}
-                    </h1>
-                    <p class="italic">{frontmatter.description}</p>
-                    <slot />
-                    <Links links={frontmatter.links} />
-                </div>
-            </div>
-            {frontmatter.details && <Details />}
+    <div
+        class="flex-row justify-center content-center md:flex md:justify-around"
+    >
+        <div class="flex justify-center md:block mb-5 md:w-3/8 md:pr-10">
+            <img class="w-1/2 md:w-auto" src={frontmatter.image} alt="mandatory" />
+        </div>
+        <div class="md:w-3/5">
+            <h1 class="mb-3">
+                <strong>{siteInfo.firstName}</strong>
+                {siteInfo.lastName}
+            </h1>
+            <p class="italic">{siteInfo.description}</p>
+            <slot />
+            <Links links={frontmatter.links} />
         </div>
     </div>
+    {frontmatter.details && <Details />}
+    {
+        frontmatter.publications && (
+            <Publications number={frontmatter.publications} heading={true} />
+        )
+    }
+    <News number={frontmatter.news} />
 </BaseLayout>

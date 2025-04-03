@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from "astro:content";
+import Publication from "./Publication.astro";
+
+const { number, heading } = Astro.props;
+
+var publications = await getCollection("publications");
+publications.sort((a, b) => {
+    const year = b.data.year - a.data.year;
+    if (year) return year;
+
+    const conference = b.data.conference < a.data.conference ? 1 : -1;
+    return conference;
+});
+
+if (number) {
+    publications = publications.slice(0, number);
+}
+---
+
+{heading && <h2>{number && "Recent"} Publications</h2>}
+
+{number && <div class="mt-2 mb-7 italic"><p>See <a href="/publications"> publications </a> for a full list.</p></div>}
+
+<ul>
+    {
+        publications.map((publication) => (
+            <Publication publication={publication} />
+        ))
+    }
+</ul>

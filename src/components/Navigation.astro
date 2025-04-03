@@ -1,0 +1,40 @@
+---
+const path = Astro.url.pathname;
+const home = path === "/";
+import { siteInfo } from "../siteInfo";
+---
+
+<nav
+    class="h-15 border-b border-gray-300 fixed top-0 bg-white dark:bg-neutral-900 opacity-95 backdrop-blur-lg flex justify-center align-center font-extralight w-screen"
+>
+    <div class="flex p-5 md:p-0 w-full md:w-3xl md:max-w-3xl">
+        <div
+            class=`flex w-full text-black items-center  ${home ? "justify-end" : "justify-between"}`
+        >
+            {
+                !home && (
+                    <a class="pr-3 text-xl" href="/">
+                        {" "}
+                        <span class="font-extrabold">
+                            {" "}
+                            {siteInfo.firstName}{" "}
+                        </span>{" "}
+                        {siteInfo.lastName}{" "}
+                    </a>
+                )
+            }
+            <div>
+                <a id="home" class=`pr-3 ${home ? "font-bold" : ""}` href="/">
+                    home
+                </a>
+                <a
+                    id="publications"
+                    class=`pr-3 ${path === "/publications" ? "font-bold" : ""}`
+                    href="/publications"
+                >
+                    publications
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
