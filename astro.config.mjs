@@ -5,9 +5,10 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
     redirects: {
-        "/cv": "/Oliver Alonzo CV.pdf",
+        "/cv": "/OliverAlonzoCV.pdf",
     },
     vite: {
         plugins: [tailwindcss()],
-    }
+    },
+    site: 'https://oliveralonzo.github.io'
 });
