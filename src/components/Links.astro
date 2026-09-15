@@ -9,10 +9,13 @@ const { links } = Astro.props;
         {
             Object.values(links).map((link, i, arr) => (
                 <li>
-                    <a href={link.url} target="_blank">
-                        {" "}
-                        {link.showas}{" "}
-                    </a>
+                    {link.url ? (
+                        <a href={link.url} target="_blank" rel="noopener noreferrer">
+                            {link.showas}
+                        </a>
+                    ) : (
+                        <span>{link.showas}</span>
+                    )}
                     {i !== arr.length - 1 && <Separator />}
                 </li>
             ))

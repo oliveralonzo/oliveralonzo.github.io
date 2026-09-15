@@ -2,6 +2,7 @@
 import { siteInfo } from "../siteInfo.ts";
 
 const formattedDate = new Date(siteInfo.lastUpdated).toLocaleString("en-US", {
+    timeZone: "UTC",
     month: "short",
     day: "numeric",
     year: "numeric",
@@ -18,7 +19,7 @@ const formattedDate = new Date(siteInfo.lastUpdated).toLocaleString("en-US", {
                 </p>
             <p>
                 Powered by
-                <a href="https://astro.build/">Astro</a>, originally inspired by
+                <a href="https://astro.build/">Astro</a>, inspired by
                 <a href="https://github.com/alshedivat/al-folio"
                     >al-folio theme</a
                 >. Hosted by GitHub Pages. Last updated: {formattedDate}.

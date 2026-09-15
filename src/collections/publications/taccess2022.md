@@ -4,8 +4,5 @@ authors: Oliver Alonzo, Lisa Elliot, Becca Dingman, Sooyeon Lee, Akhter Al Amin,
 conference: TACCESS
 year: 2022
 links:
-    -
-        url: https://doi.org/10.1145/3520198
-        showas: Paper
-   
+  paper: https://doi.org/10.1145/3520198
 ---

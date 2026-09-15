@@ -2,7 +2,7 @@
 layout: ../layouts/Home.astro
 image: '/images/oliver.png'
 alt: 'Black and white headshot of Oliver'
-news: 4
+news: 5
 publications: 3
 links:
     email:

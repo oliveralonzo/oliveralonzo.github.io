@@ -4,7 +4,5 @@ authors: Oliver Alonzo, Abraham Glasser, Matt Huenerfauth
 conference: ASSETS
 year: 2019
 links:
-    -
-        url: https://doi.org/10.1145/3308561.3353791
-        showas: Paper
+  paper: https://doi.org/10.1145/3308561.3353791
 ---

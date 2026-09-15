@@ -30,7 +30,7 @@ import { Content as Details } from "../components/details.md";
     {frontmatter.details && <Details />}
     {
         frontmatter.publications && (
-            <Publications number={frontmatter.publications} heading={true} />
+            <Publications number={frontmatter.publications} heading={true} highlightsOnly={true} />
         )
     }
     <News number={frontmatter.news} />

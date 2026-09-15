@@ -20,10 +20,12 @@ const publications = defineCollection({
         conference: z.string(),
         year: z.number(),
         award: z.string().optional(),
-        links: z.array(z.object({
-            url: z.string(),
-            showas: z.string().optional(),
-        })).or(z.null()),
+        highlight: z.boolean().default(false),
+        links: z.record(z.union([z.string().url(), z.literal("")]))
+            .transform((links) => Object.entries(links).map(([label, url]) => ({
+                url,
+                showas: label.charAt(0).toUpperCase() + label.slice(1),
+            }))),
     })
 });
 
